@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Web</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/eab0de59f6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="input-container">
+            <input class="search-input" id="searchInput" placeholder="Search city...">
+            <button class="search-button" id="searchButton">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+        <div class="weather-container">
+            <div id="cityWeather" class="city-weather hidden">
+                <img class="icon" id="icon" alt>
+                <h1 class="temperature" id="temperature"></h1>
+                <h2 class="city" id="city"></h2>
+                <div class="details">
+                    <div class="detail">
+                        <img src="aset/humidity.png">
+                        <div class="description">
+                            <p class="value" id="humidity">%</p>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+                    <div class="detail">
+                        <img src="aset/wind.png">
+                        <div class="description">
+                            <p class="value" id="wind">km/h</p>
+                            <p>Wind</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="noCityFound" class="no-city-found hidden">
+                <img src="aset/map.png" alt="">
+                <p>Oops! Location not found!</p>
+            </div>
+        </div>
+        <footer>
+            <p>Created by Muhammad Dzaki Raffa | &copy; 2024 </p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #226ba3;
+    --white-color: #fff;
+}
+
+body {
+    font-family: Poppins;
+    min-height: 100vh;
+    background-color: #eee;
+    background: url(aset/phill-brown-T0PaR22Kv8k-unsplash.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 400px;
+    border: 2px solid var(--white-color);
+    padding: 30px;
+    border-radius: 10px;
+    backdrop-filter: blur(8px);
+    text-align: center;
+}
+
+.city-weather,
+.no-city-found {
+    display: none;
+    transition: all 0.7s ease;
+}
+
+.city-weather.show,
+.no-city-found.show {
+    display: block;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-input {
+    flex: 1;
+    padding: 10px 10px 10px 20px;
+    border-radius: 30px;
+    border: 2px solid transparent;
+    font-size: 16px;
+    margin-right: 10px;
+    outline: none;
+}
+
+.search-button {
+    width: 40px;
+    height: 40px;
+    background: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 40px;
+    font-size: 24px;
+    cursor: pointer;
+    outline: none;
+}
+
+.no-city-found img {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.no-city-found p {
+    font-size: 24px;
+}
+
+.city-weather .icon {
+    width: 170px;
+}
+
+.city-weather .temperature {
+    font-size: 75px;
+    font-weight: 500;
+}
+
+.city-weather .city {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.city-weather .details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.details .detail {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    text-align: left;
+}
+
+.detail img {
+    width: 40px;
+}
+
+.detail .value {
+    font-size: 24px;
+}
+
+footer {
+    margin-top: 15px;
+}
+
+footer p {
+    font-size: small;
+    font-weight: 200;
+}
